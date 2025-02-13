@@ -43,7 +43,7 @@ export default function FormInformation() {
               <p className="text-gray-700">{post?.content}</p>
               <p className="text-sm text-gray-500">ID: {post?.id}</p>
               <p className="text-sm text-gray-500">
-                Created at: {new Date(post?.timestamp).toLocaleString()}
+                Created at: {post?.timestamp}
               </p>
               <button
                 onClick={() => handleDelete(post.id)}
