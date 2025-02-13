@@ -12,7 +12,6 @@ import {
   FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/_shared/form";
 import { Input } from "@/components/_shared/input";
@@ -67,7 +66,7 @@ export default function Home() {
             name="title"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Title</FormLabel>
+                {/* <FormLabel>Title</FormLabel> */}
                 <FormControl>
                   <Input placeholder="Enter title" {...field} required />
                 </FormControl>
@@ -81,7 +80,7 @@ export default function Home() {
             name="content"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Content</FormLabel>
+                {/* <FormLabel>Content</FormLabel> */}
                 <FormControl>
                   <Input placeholder="Enter content" {...field} required />
                 </FormControl>
